@@ -1,9 +1,9 @@
 #!/bin/bash
 
-test -d /usr/local/bin
-if [ "$?" -eq 0 ] # check the return code
+test -d /usr/bin
+if  pwd # check the return code
 then            # The return code is zero
-    echo '/usr/local/bin does exist'
+    echo 'it`s working'
     
 else           # The return code is not a zero
 
