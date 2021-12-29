@@ -1,0 +1,7 @@
+A very useful tool for menus is called select.
+It originally comes from the Kornshell, but is also found in bash. 
+One interesting aspect of the select loop is that it has no conditional test at all; the only way out of the loop is to use break or exit. 
+select continuously loops around, displaying a prompt, and sets its variable to the value provided by the loop. It also sets $REPLY to the actual number typed in by the user. 
+If the user presses the ENTER key, select redisplays the list of items accepted by the loop. 
+If an invalid option is typed in by the user, the variable is not set, so you can also easily see if a chosen item was valid or not. 
+The best way to understand select is to see it in action.

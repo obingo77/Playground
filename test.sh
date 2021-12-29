@@ -1,12 +1,8 @@
-#!/bin/bash
+#!/bin/bash 
+filename=${1:-/home/ubuntu/}
 
-test -d /usr/bin
-if  pwd # check the return code
-then            # The return code is zero
-    echo 'it`s working'
-    
-else           # The return code is not a zero
-
-   echo '/usr/local/bin does not exist'
- 
-fi   
+if [ -O “$filename” ] || [ -G “$filename” ]; then  
+  echo “$filename is mine or my group’s” 
+else
+  echo “$filename is not mine nor my group’s”
+fi 

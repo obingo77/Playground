@@ -1,0 +1,4 @@
+The until loop is exactly like the while loop but the test is negated.
+This can improve readability and in certain circumstances makes a string of conditionals easier to write.
+Here, the code in until.sh is a clear description of how long the loop should run for: until $a is greater than 12, or $b is less than 100.
+On each iteration of the loop, $a is incremented by 1, and 10 is taken away from $b.
