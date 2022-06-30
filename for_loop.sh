@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for BOOTY  in onion_booty bubble_butt 
+for fruits  in apples,bananas,oranges 
 do
-  echo "I like big $BOOTY"
+  echo "I like fruits"
 done  
